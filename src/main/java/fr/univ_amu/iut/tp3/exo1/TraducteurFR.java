@@ -6,13 +6,13 @@ public class TraducteurFR extends Traducteur {
 
         switch (expressionComposee.getOperande()) {
             case '+':
-                return " ( " + traduire(expressionComposee.getFg()) + " plus " + traduire(expressionComposee.getFd()) + " ) ";
+                return "(" + traduire(expressionComposee.getFg()) + " plus " + traduire(expressionComposee.getFd()) + ")";
             case '-':
-                return " ( " + traduire(expressionComposee.getFg()) + " moins " + traduire(expressionComposee.getFd()) + " ) ";
+                return "(" + traduire(expressionComposee.getFg()) + " moins " + traduire(expressionComposee.getFd()) + ")";
             case '*':
-                return " ( " + traduire(expressionComposee.getFg()) + " multiplié par " + traduire(expressionComposee.getFd()) + " ) ";
+                return "(" + traduire(expressionComposee.getFg()) + " multiplié par " + traduire(expressionComposee.getFd()) + ")";
             case '/':
-                return " ( " + traduire(expressionComposee.getFg()) + " divisé par " + traduire(expressionComposee.getFd()) + " ) ";
+                return "(" + traduire(expressionComposee.getFg()) + " divisé par " + traduire(expressionComposee.getFd()) + ")";
         }
         throw new IllegalArgumentException("Signe d'opération non-existant.");
     }
