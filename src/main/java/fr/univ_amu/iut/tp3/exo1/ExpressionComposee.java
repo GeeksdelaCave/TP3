@@ -5,12 +5,22 @@ public class ExpressionComposee extends Expression {
     private Expression fg, fd;
     private char operande;
 
+    /**
+     * Constructeur d'expression composée d'une expression composée ou un nombre, une opérande, et une autre expression composée ou autre nombre.
+     * @param fg opérande de gauche
+     * @param fd opérande de droite
+     * @param operande opérateur
+     */
     public ExpressionComposee(Expression fg, Expression fd, char operande) {
         this.fg = fg;
         this.fd = fd;
         this.operande = operande;
     }
 
+    /**
+     * Méthode retournant le résultat de l'expression composée actuelle. Effectue le calcul entre ses deux opérandes avec le résultat des deux.
+     * @return Retourne le résultat de l'expression composée (et de ses opérandes).
+     */
     public int calculer() {
         switch (operande) {
 
