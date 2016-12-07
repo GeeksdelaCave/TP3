@@ -1,7 +1,5 @@
 package fr.univ_amu.iut.tp3.exo2;
 
-import javax.print.Doc;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
